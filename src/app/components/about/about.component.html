@@ -1,1 +1,69 @@
-<p>about works!</p>
+<section  class="pt-3 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col text-uppercase text-center">
+          <h2>Contactos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          Escribe un mensaje con las <abbr data-toggle="tooltip" title="Especificarlas">dudas</abbr> que tengas.
+        </div>
+      </div>
+      <div>
+          <center>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61208.652046375726!2d-68.1774238208984!3d-16.49877589999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf89e01d3d75%3A0x1bc86a150ccdc73d!2sEliot%20Electrodom%C3%A9sticos!5e0!3m2!1ses!2sbo!4v1584455897136!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </center>
+      </div>
+      <div class="row">
+        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+          <form id="myform">
+            <div class="form-row">
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Celular">
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="Correo electrónico">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <textarea name="text" class="form-control form-control-lg" placeholder="Mensaje...."></textarea>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <button type="reset" class="btn btn-block" style="background-color: #82ad36; color: white;">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <center style="margin-top: 20px;">
+        <h2>Redes Sociales</h2>
+        <input type="text" [(ngModel)]="contact">
+        {{ contact }}
+
+        <div [ngSwitch]="contact">
+            <p *ngSwitchCase="'Facebook'"><a href="#" >Facebook</a></p>
+            <p *ngSwitchCase="'Instagram'"><a href="#">Instagram</a></p>
+            <p *ngSwitchCase="'Twitter'"><a href="#">Twitter</a></p>
+            <p *ngSwitchDefault>no hay match</p>
+        </div>
+    </center>
+</section>    
+
+  
+
+  
+  
