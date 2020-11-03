@@ -9,7 +9,7 @@ export class AboutComponent implements OnInit {
 
   contact = 'Introduzca Medio';
 
-  items = ['Facebook', 'Instagram', 'Twitter'];
+  items = ['Facebook', 'Instagram', 'Twitter', 'Telefono', 'Celular'];
 
   constructor() { }
 
